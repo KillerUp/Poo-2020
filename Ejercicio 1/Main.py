@@ -59,7 +59,10 @@ def contarDominio(dominio):
 
 if __name__ == "__main__":
 
-    '''nombre = input("Ingrese su nombre: ")
+#FUNCION TESTING (quitar comentado)
+    #testing()
+
+    nombre = input("Ingrese su nombre: ")
 
     unaCuenta = Email()
     while(unaCuenta.crearCuenta(input("Ingrese un correo: "), input("Ingrese una contraseña: ")) == -1):
@@ -77,7 +80,5 @@ if __name__ == "__main__":
     cambiarcontraseña(unaCuenta)
 
     dominio = input("Ingrese un dominio: ")
-    print("El dominio apareció", contarDominio(dominio), "veces")'''
-
-    testing()
+    print("El dominio apareció", contarDominio(dominio), "veces")
     pass
