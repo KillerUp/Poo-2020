@@ -15,6 +15,18 @@ def testing():
         pass
     pass
 
+def crearCuenta(correo = '', contraseña = ''):
+        if((correo.find('@') == -1) or (correo.find('.') == -1) or (correo.find('@') > correo.find('.'))):
+            print("Error: CORREO NO VÁLIDO")
+            return(-1)
+        elif (not contraseña) or (contraseña == ' '):
+            print("ERROR: La contraseña no puede estar vacia")
+            return(-1)
+        else:
+            a, b = correo.split('@')
+            b, c = b.split('.', 1)
+            return Email(a, b, c, contraseña)
+
 def cambiarcontraseña(cuenta):
     print("Modificar contraseña")
 
@@ -35,7 +47,7 @@ def cambiarcontraseña(cuenta):
 
 def contarDominio(dominio):
     listacuentas = []
-    archivo = open('Ejercicio 1/Cuentas.csv')
+    archivo = open('Practico 1/Ejercicio 1/Cuentas.csv')
     reader = csv.reader(archivo, delimiter = ',')
 
     for linea in reader:
@@ -64,10 +76,11 @@ if __name__ == "__main__":
 
     nombre = input("Ingrese su nombre: ")
 
-    unaCuenta = Email()
-    while(unaCuenta.crearCuenta(input("Ingrese un correo: "), input("Ingrese una contraseña: ")) == -1):
+    unaCuenta = crearCuenta(input("Ingrese un correo: "), input("Ingrese una contraseña: "))
+    while(unaCuenta == -1):
         os.system("pause")
         os.system("cls")
+        unaCuenta = crearCuenta(input("Ingrese un correo: "), input("Ingrese una contraseña: "))
         pass
 
     os.system("cls")

@@ -1,16 +1,6 @@
 import re
 
 class Email:
-
-##   Atributos   ##
-
-    __idCuenta = ''
-    __dom = ''
-    __tipDom = ''
-    __contr = ''
-
-##  Métodos  ##
-
     def __init__(self, idCuenta = '', dom = '', tipDom = '', contr = ''):
         self.__idCuenta = idCuenta
         self.__dom = dom
