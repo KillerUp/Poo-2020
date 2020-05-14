@@ -57,6 +57,7 @@ class Menu(object):
             else:
                 sabor = self.__ms.buscarSabor(numero) #Retorna el sabor encontrado o None si no lo encontro
                 if sabor != None:
+                    sabor.contarPedido()
                     sabores.append(sabor) #Agrega el sabor encontrado a la lista de sabores del pedido
                 else:
                     print("ERROR. Sabor no encontrado.")
@@ -71,8 +72,6 @@ class Menu(object):
         print(helado)
 
     def opcion2(self):
-        
-        self.__mh.contarSabores() #cuenta la cantidad de veces que se pidio cada sabor de helado
         lista_sabores = self.__ms.saboresMasPedidos()
 
         for i in range(5): #Muestra las 5 primeras componentes de la lista que serian los sabores mas vendidos

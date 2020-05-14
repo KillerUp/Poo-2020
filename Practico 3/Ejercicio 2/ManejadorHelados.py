@@ -9,11 +9,6 @@ class ManejadorHelados(object):
     def agregarHelado(self, helado):
         self.__helados.append(helado)
     
-    def contarSabores(self):
-        for helado in self.__helados: #Para cada helado pedido
-            for sabor in helado.getSabores(): #para cada sabor de helado pedido
-                sabor.contarPedido() #+1 a la cantidad de veces que se pidio ese sabor
-    
     def pesoEstimado(self,num_sabor):
         acum = 0
         for helado in self.__helados: #Para cada helado

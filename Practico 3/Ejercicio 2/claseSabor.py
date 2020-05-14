@@ -22,7 +22,7 @@ class Sabor(object):
         return self.__vecespedido > otro.getVecesPedido() #Sobrecargo los operadores >, <, == para contar los helados mas vendidos
 
     def __lt__(self, otro):
-        return self.__vecespedido > otro.getVecesPedido()
+        return self.__vecespedido < otro.getVecesPedido()
 
     def contarPedido(self):
         self.__vecespedido += 1 #incrementa el contador de pedidos
