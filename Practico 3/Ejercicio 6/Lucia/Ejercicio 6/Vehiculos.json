@@ -1,0 +1,1 @@
+{"__class__": "Lista", "datos": [{"__class__": "VehiculoNuevo", "__atributos__": {"modelo": "clio", "cantidadPuertas": 5, "color": "Gris", "precioBase": 100000.0, "version": "base"}}, {"__class__": "VehiculoUsado", "__atributos__": {"modelo": "duna", "cantidadPuertas": 3, "color": "rojo", "precioBase": 70000.0, "marca": "fiat", "patente": "bgd656", "anio": 1997, "km": 30000}}]}
