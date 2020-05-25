@@ -53,7 +53,7 @@ class Lista(object):
         except ValueError:
             raise Exception('La posicion debe ser un valor entero.')
         else:
-            posicion = int(posicion)
+            posicion = int(posicion) - 1
 
         if posicion < 0 or posicion > self.__tope:
             raise Exception('Indice fuera de rango.')
@@ -81,7 +81,7 @@ class Lista(object):
         except ValueError:
             raise Exception('La posicion debe ser un valor entero.')
         else:
-            posicion = int(posicion)
+            posicion = int(posicion) - 1
 
         if posicion < 0 or posicion > self.__tope:
             raise Exception('Indice fuera de rango.')

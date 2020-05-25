@@ -3,8 +3,8 @@ from Vehiculos import Vehiculo
 class VehiculoNuevo(Vehiculo):
     __version = ''
 
-    def __init__(self, modelo, cant, color, precio,version):
-        super().__init__(modelo, cant, color, precio)
+    def __init__(self, modelo, cantidadPuertas, color, precioBase,version):
+        super().__init__(modelo, cantidadPuertas, color, precioBase)
         self.__version = version
     
     def calcularImporte(self):
@@ -27,7 +27,7 @@ class VehiculoNuevo(Vehiculo):
         return d
 
     def __str__(self):
-        cadena = 'Modelo: {} \n Cantidad de puertas: {} \n Color: {} \n Precio Base: {} \n Marca: {} \n  Version: {} \n Importe de Venta: {} \n'.format(self.getModelo(),self.getPuertas(),self.getColor(),self.getPrecio(),self.__marca,self.__version,self.calcularImporte())
+        cadena = 'Modelo: {} \n Cantidad de puertas: {} \n Color: {} \n Precio Base: {} \n  Version: {} \n Importe de Venta: {} \n'.format(self.getModelo(),self.getPuertas(),self.getColor(),self.getPrecio(),self.__version,self.calcularImporte())
         return cadena
 
     def mostrar(self):

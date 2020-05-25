@@ -34,7 +34,7 @@ class Menu(object):
     def opcion1(self):
         vehiculo = self.ingresarVehiculo()
         p = input('Ingrese la posicion: ')
-        self.__lista.insertarElemento(p-1,vehiculo)
+        self.__lista.insertarElemento(p,vehiculo)
     
     def ingresarVehiculo(self):
         ban = False
@@ -68,7 +68,7 @@ class Menu(object):
         
     def opcion3(self):
         p = input('Ingrese la posicion: ')
-        self.__lista.mostrarElemento(p - 1)
+        self.__lista.mostrarElemento(p)
         
     def opcion4(self):
         patente = input("Ingrese su patente: ")

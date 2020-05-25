@@ -6,11 +6,11 @@ class Vehiculo(object):
     __color = ''
     __precioBase = 0.0
 
-    def __init__(self,modelo,cant,color,precio):
+    def __init__(self,modelo,cantidadPuertas,color,precioBase):
         self.__modelo = modelo
-        self.__cantidadPuertas = cant
+        self.__cantidadPuertas = cantidadPuertas
         self.__color = color
-        self.__precioBase = precio
+        self.__precioBase = precioBase
 
     @abc.abstractmethod 
     def calcularImporte(self):

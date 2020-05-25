@@ -5,21 +5,21 @@ from datetime import datetime
 class VehiculoUsado(Vehiculo):
     __marca = ''
     __patente = ''
-    __año = 0
-    __kilometraje = 0
+    __anio = 0
+    __km = 0
     
-    def __init__(self, modelo, cant, color, precio,marca,patente,año,kilometraje):
-        super().__init__(modelo, cant, color, precio)
+    def __init__(self, modelo, cantidadPuertas, color, precioBase,marca,patente,anio,km):
+        super().__init__(modelo, cantidadPuertas, color, precioBase)
         self.__marca = marca
         self.__patente = patente
-        self.__año = año
-        self.__kilometraje = kilometraje
+        self.__anio = anio
+        self.__km = km
 
     def calcularImporte(self):
         fecha = date.today()
-        antiguedad = int(int(fecha.year) - self.__año)
+        antiguedad = int(int(fecha.year) - self.__anio)
         importeVenta = self._Vehiculo__precioBase - ((self._Vehiculo__precioBase / 100) * antiguedad)
-        if self.__kilometraje > 100000:
+        if self.__km > 100000:
             importeVenta += self._Vehiculo__precioBase - ((self._Vehiculo__precioBase * 2) / 100)
         return importeVenta
 
@@ -39,14 +39,14 @@ class VehiculoUsado(Vehiculo):
                 precioBase = self._Vehiculo__precioBase,
                 marca = self.__marca,
                 patente = self.__patente,
-                anio = self.__año,
-                km = self.__kilometraje
+                anio = self.__anio,
+                km = self.__km
                 )
                 )
         return d
 
     def __str__(self):
-        cadena = 'Modelo: {} \n Cantidad de puertas: {} \n Color: {} \n Precio Base: {} \n Marca: {} \n Patente: {} \n Año: {} \n Kilometraje: {} \n Importe de Venta: {} \n'.format(self.getModelo(),self.getPuertas(),self.getColor(),self.getPrecio(),self.__marca,self.__patente,self.__año,self.__kilometraje,self.calcularImporte())
+        cadena = 'Modelo: {} \n Cantidad de puertas: {} \n Color: {} \n Precio Base: {} \n Marca: {} \n Patente: {} \n Año: {} \n Kilometraje: {} \n Importe de Venta: {} \n'.format(self.getModelo(),self.getPuertas(),self.getColor(),self.getPrecio(),self.__marca,self.__patente,self.__anio,self.__km,self.calcularImporte())
         return cadena
 
     def mostrar(self):
