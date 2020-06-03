@@ -22,7 +22,7 @@ class Menu(object):
 
         self.__lista = Lista()
         obj = ObjectEncoder()
-        self.__lista = obj.decoder(obj.leer("Practico 3/Ejercicio 6/Vehiculos.json"))
+        self.__lista = obj.decoder(obj.leer("Vehiculos.json"))
 
     def funcion(self, op):
         func=self.__switcher.get(op, lambda: print("Opción no válida"))
