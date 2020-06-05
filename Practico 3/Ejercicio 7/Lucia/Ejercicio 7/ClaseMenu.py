@@ -5,6 +5,7 @@ from Docentes import Docentes
 from Investigador import Investigador
 from DocenteInvestigador import DocenteInvestigador
 from PersonalApoyo import PersonalApoyo
+from Interface import Icoleccion
 
 class Menu(object):
     __switcher=None
@@ -36,7 +37,8 @@ class Menu(object):
     def opcion1(self):
         posicion = input('Ingrese la posicion: ')
         agente = self.ingresarAgente()
-        self.__lista.insertarElemento(posicion,agente)
+        Icoleccion(self.__lista).insertarElemento(posicion,agente)
+
     
     def ingresarAgente(self):
         ban = False
@@ -90,11 +92,11 @@ class Menu(object):
 
     def opcion2(self):
         agente = self.ingresarAgente()
-        self.__lista.agregarElemento(agente)
+        Icoleccion(self.__lista).agregarElemento(agente)
         
     def opcion3(self):
         p = input('Ingrese la posicion: ')
-        cadena = self.__lista.mostrarElemento(p)
+        cadena = Icoleccion(self.__lista).mostrarElemento(p)
         print(cadena)
         
     def opcion4(self):
