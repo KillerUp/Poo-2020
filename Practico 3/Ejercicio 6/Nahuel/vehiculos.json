@@ -1,0 +1,50 @@
+{
+   "vehiculos": [
+      {
+         "__class__": "Usado",
+         "__atributos__": {
+            "modelo": "Sandero",
+            "puertas": 5,
+            "color": "azul",
+            "precio": 180000.0,
+            "marca": "Renault",
+            "patente": "ITY362",
+            "anio": 2011,
+            "kilometraje": 150000
+         }
+      },
+      {
+         "__class__": "Nuevo",
+         "__atributos__": {
+            "modelo": "Vento",
+            "puertas": 5,
+            "color": "negro",
+            "precio": 1500000.0,
+            "version": "full"
+         }
+      },
+      {
+         "__class__": "Usado",
+         "__atributos__": {
+            "modelo": "Duna",
+            "puertas": 5,
+            "color": "rojo",
+            "precio": 65000.0,
+            "marca": "Fiat",
+            "patente": "AKL095",
+            "anio": 1996,
+            "kilometraje": 300000
+         }
+      },
+      {
+         "__class__": "Nuevo",
+         "__atributos__": {
+            "modelo": "Saveiro",
+            "puertas": 3,
+            "color": "blanco",
+            "precio": 800000.0,
+            "version": "base"
+         }
+      }
+   ]
+}

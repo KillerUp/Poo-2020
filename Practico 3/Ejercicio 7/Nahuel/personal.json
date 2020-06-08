@@ -1,0 +1,33 @@
+{
+    "personal": [
+        {
+            "__class__": "DocenteInvestigador",
+            "__atributos__": {
+                "cuil": "20418302977",
+                "apellido": "Moreno",
+                "nombre": "Nahuel",
+                "sueldo": 50000.00,
+                "antiguedad": 5,
+                "area": "Informatica",
+                "tipo": "V",
+                "carrera": "LCC",
+                "cargo": "exclusivo",
+                "catedra": "Programacion orientada a objetos",
+                "categoria_incentivo": "B",
+                "extra": 7500.00 
+            }
+        },
+        {
+            "__class__": "Investigador",
+            "__atributos__": {
+                "cuil": "20358962477",
+                "apellido": "Fort",
+                "nombre": "Ricardo",
+                "sueldo": 63000.00,
+                "antiguedad": 10,
+                "area": "Informatica",
+                "tipo": "II"
+            }
+        }   
+    ]
+}
