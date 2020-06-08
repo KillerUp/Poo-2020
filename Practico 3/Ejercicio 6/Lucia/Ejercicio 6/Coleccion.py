@@ -51,7 +51,7 @@ class Lista(object):
         try:
             int(posicion)
         except ValueError:
-            raise Exception('La posicion debe ser un valor entero.')
+            print('La posicion debe ser un valor entero.')
         else:
             posicion = int(posicion) - 1
 
@@ -79,7 +79,7 @@ class Lista(object):
         try:
             int(posicion)
         except ValueError:
-            raise Exception('La posicion debe ser un valor entero.')
+            print('La posicion debe ser un valor entero.')
         else:
             posicion = int(posicion) - 1
 

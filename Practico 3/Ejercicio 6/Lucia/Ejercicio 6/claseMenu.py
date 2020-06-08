@@ -4,7 +4,7 @@ import json
 from VehiculoNuevo import VehiculoNuevo
 from VehiculoUsado import VehiculoUsado
 from numpy.core.defchararray import isnumeric
-
+from Interface import Icoleccion
 
 class Menu(object):
     __switcher=None
@@ -22,7 +22,7 @@ class Menu(object):
 
         self.__lista = Lista()
         obj = ObjectEncoder()
-        self.__lista = obj.decoder(obj.leer("Vehiculos.json"))
+        self.__lista = obj.decoder(obj.leer("Practico 3/Ejercicio 6/Vehiculos.json"))
 
     def funcion(self, op):
         func=self.__switcher.get(op, lambda: print("Opción no válida"))
@@ -34,7 +34,7 @@ class Menu(object):
     def opcion1(self):
         vehiculo = self.ingresarVehiculo()
         p = input('Ingrese la posicion: ')
-        self.__lista.insertarElemento(p,vehiculo)
+        Icoleccion(self.__lista).insertarElemento(p,vehiculo)
     
     def ingresarVehiculo(self):
         ban = False
@@ -64,11 +64,11 @@ class Menu(object):
 
     def opcion2(self):
         vehiculo = self.ingresarVehiculo()
-        self.__lista.agregarElemento(vehiculo)
+        Icoleccion(self.__lista).agregarElemento(vehiculo)
         
     def opcion3(self):
         p = input('Ingrese la posicion: ')
-        self.__lista.mostrarElemento(p)
+        Icoleccion(self.__lista).mostrarElemento(p)
         
     def opcion4(self):
         patente = input("Ingrese su patente: ")
@@ -76,7 +76,7 @@ class Menu(object):
         try:
             patente.isalnum()
             int(precio)
-        except TypeError:
+        except ValueError:
             print("El precio debe ser un numero") 
         except:
             print('Ingreso erroneamente su patente')
