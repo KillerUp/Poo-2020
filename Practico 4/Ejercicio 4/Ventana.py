@@ -118,9 +118,6 @@ class Ventana(object):
                     messagebox.showerror(title='Error',message='Solo se puede realizar una operacion')
                     return
 
-            #if operador == 'L':
-                        #operador = '/'
-
             texto = self.__operacion_en_curso.get()
             texto += operador
             self.__operacion_en_curso.set(texto)
