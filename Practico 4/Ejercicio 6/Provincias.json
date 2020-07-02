@@ -1,0 +1,32 @@
+{
+   "__class__": "Lista",
+   "datos": [
+      {
+         "__class__": "Provincia",
+         "__atributos__": {
+            "nombre_provincia": "Buenos Aires",
+            "nombre_capital": "La Plata",
+            "habitantes": 15625084,
+            "departamentos": 135
+         }
+      },
+      {
+         "__class__": "Provincia",
+         "__atributos__": {
+            "nombre_provincia": "Chaco",
+            "nombre_capital": "Resistencia",
+            "habitantes": 1131000,
+            "departamentos": 25
+         }
+      },
+      {
+         "__class__": "Provincia",
+         "__atributos__": {
+            "nombre_provincia": "San Juan",
+            "nombre_capital": "San Juan",
+            "habitantes": 180000,
+            "departamentos": 14
+         }
+      }
+   ]
+}
