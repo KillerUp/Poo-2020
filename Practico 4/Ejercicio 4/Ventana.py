@@ -100,7 +100,7 @@ class Ventana(object):
 
     def imprimir_operador(self, operador):
         if self.__buffer.get() != '':
-            if operador in ['+', 'x', '/','-']:
+            if operador in ['+', 'x', '/']:
                 self.__operador = operador
                 self.__operacion_en_curso.set(self.__buffer.get() + operador)
                 self.__buffer.set('')
@@ -114,9 +114,6 @@ class Ventana(object):
         else:
             if operador in ['+', 'x', '/','-']:
                 self.__operador = operador
-                if self.__operacion_en_curso.get().count('+') > 0 or self.__operacion_en_curso.get().count('-') > 0 or self.__operacion_en_curso.get().count('x') > 0 or self.__operacion_en_curso.get().count('/') > 0:
-                    messagebox.showerror(title='Error',message='Solo se puede realizar una operacion')
-                    return
 
             texto = self.__operacion_en_curso.get()
             texto += operador
