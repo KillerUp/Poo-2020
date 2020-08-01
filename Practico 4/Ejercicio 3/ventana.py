@@ -57,7 +57,7 @@ class Ventana(object):
         compra=''
         venta=''
         while i < len(dic):
-            if dic[i]["casa"]["nombre"].find('Dolar') != -1 and dic[i]["casa"]["compra"] != 0 and dic[i]["casa"]["venta"] != 0:
+            if dic[i]["casa"]["nombre"].find('Dolar') != -1 and dic[i]["casa"]["compra"] != '0' and dic[i]["casa"]["venta"] != '0':
                 dolar = dic[i]["casa"]["nombre"]
                 compra = dic[i]["casa"]["compra"]
                 venta = dic[i]["casa"]["venta"]
