@@ -7,7 +7,7 @@ class Nutricionista(object):
         metros = float(estatura)/100
         cadena = ''
 
-        self.__imc = round(float(int(peso) / (metros **2)), 2)
+        self.__imc = round(float(float(peso) / (metros **2)), 2)
 
         if self.__imc <= 18.5:
             cadena = 'Peso inferior al normal'

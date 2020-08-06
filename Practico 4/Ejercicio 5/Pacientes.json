@@ -1,15 +1,4 @@
 {
    "__class__": "Lista",
-   "datos": [
-      {
-         "__class__": "Paciente",
-         "__atributos__": {
-            "nombre": "Nahuel",
-            "apellido": "Moreno",
-            "telefono": "(264)5893521",
-            "altura": "184",
-            "peso": "80.300"
-         }
-      }
-   ]
+   "datos": []
 }

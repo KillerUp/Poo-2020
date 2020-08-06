@@ -4,7 +4,6 @@ from tkinter import messagebox, ttk
 
 from Paciente import Paciente
 
-#falta boton ver IMC
 
 class ListaPacientes(tk.Frame):
     def __init__(self, master=None, **kw):
