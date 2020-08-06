@@ -22,7 +22,7 @@ class Controlador(object):
     def seleccionarProvincia(self, indice):
         self.seleccion = indice
         provincia = self.provincias[indice]
-        self.ventana.verprovincia(provincia,self.clima.getclima(provincia.getnombreprovincia()))
+        self.ventana.verprovincia(provincia,self.clima.getclima(provincia.getnombrecapital()))
 
   
     def comenzar(self):

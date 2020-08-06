@@ -7,18 +7,8 @@
             "nombre": "Nahuel",
             "apellido": "Moreno",
             "telefono": "(264)5893521",
-            "altura": "184.0",
-            "peso": "85.0"
-         }
-      },
-      {
-         "__class__": "Paciente",
-         "__atributos__": {
-            "nombre": "Lucia",
-            "apellido": "Radicetti",
-            "telefono": "(264)4839711",
-            "altura": "152",
-            "peso": "58"
+            "altura": "184",
+            "peso": "80.300"
          }
       }
    ]

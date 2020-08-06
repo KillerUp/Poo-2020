@@ -8,10 +8,7 @@ class Clima(object):
 
     
     def getclima(self, provincia):
-        if provincia.lower() != 'buenos aires':
-            query = provincia.lower() + ' province'
-        else:
-            query = provincia.lower()
+        query = provincia.lower()
             
         solicitud = get('https://api.openweathermap.org/data/2.5/weather?q={},AR&units=metric&appid={}'.format(query, self.__api_id))
         valores = solicitud.json()
